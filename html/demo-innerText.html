@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   	
+   	<title>MyDcoument</title>
+   	
+      <script>
+      	 //https://www.w3schools.com/js/js_output.asp
+         alert(4+5);
+         console.log("trijal is king1");
+
+					//Using document.write() after an HTML document is loaded, will delete all existing HTML:
+         document.write("My message for HTML");
+         window.print();
+         //out.println("trijal is king2");
+         
+           function getInnerText() {
+         			alert(document.getElementById("example1").innerText)
+           }
+         
+           function getInnerHTML() {
+         			alert(document.getElementById("example1").innerHTML)
+           }
+           function getTextContent() {
+         			alert(document.getElementById("example1").textContent)
+           }
+         
+          function ritu(){
+         	 		alert ("Earth is great planet");
+          }
+      </script>
+      
+   </head>
+   <body>
+   	
+      <p id="example2"> A)  This paragraph element has excess spacing   and has <span>a span element</span>    inside.</p>
+      <p id="example1"> B)  This paragraph element has excess spacing   and has <span>a span element</span>    inside.</p>
+      <button onclick="ritu()">TT - Get ritu</button>
+      <button onclick="getInnerText()">TT - Get innerText</button>
+      <button onclick="getInnerHTML()">TT - Get innerHTML</button>
+      <button onclick="getTextContent()">TT - Get textContent</button>
+      
+      <p id="demo"></p>
+
+			<h2>My First Web Page</h2>
+			<p>My first paragraph.</p>
+
+			<p>Never call document.write after the document has finished loading.
+			It will overwrite the whole document.</p>
+
+			<script>
+					document.write(5 + 6);
+					document.getElementById("demo").innerHTML = 5 + 6;
+				</script>
+
+   </body>
+</html>
