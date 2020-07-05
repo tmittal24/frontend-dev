@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Webcomponent</title>
+<style>
+    h3{
+        color: chocolate;
+    }
+</style>
+</head>
+<body>
+    <h3>Hello world</h3>
+
+    <user-card name="Trijal" avatar="https://randomuser.me/api/portraits/men/11.jpg">
+        <div slot="email">trijal@gmail.com</div>
+        <div slot="phone">5555555555</div>
+      </user-card>
+      <user-card name="Yogesh" avatar="https://source.unsplash.com/random">
+        <div slot="email">yogi@gmail.com</div>
+        <div slot="phone">3333333333</div>
+    </user-card>
+
+
+    <script src="userCard.js"></script>
+        
+</body>
+
+</html>
+
