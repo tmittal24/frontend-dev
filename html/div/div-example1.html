@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <title>My Div Document</title>
+		This is displayed on browser
+ 
+  <style type="text/css">
+	.innerDiv {
+		border: 1px outset red;color: blue;display: block;height:200px;width:200px;
+		/*
+		border: 1px outset red;color: blue;display: block;height:200px;width:200px;
+		*/
+	}
+  </style>
+  
+  <script>
+  //this is one line comment
+	function toggleBlock(){
+		div1 = document.getElementById("1");
+		toggeleDiv(div1);
+
+		div2 = document.getElementById("2");
+		toggeleDiv(div2);
+	}
+
+	function toggeleDiv(div){
+			//alert(div.style.display);
+		if(div.style.display=="block"){
+			div.style.display="none";
+		} else if (div.style.display=="none")	{
+			div.style.display="block";
+		}
+	}
+	/*
+		This is mulitple line comment
+	*/
+  </script>
+ </head>
+
+<!-- Body starts here ..... -->
+ <body>
+ <div id="container1" class="" style="border: 1px outset green;color: blue;display: block;height:200px;width:450px;padding:10px">
+	<div id="1" class="innerDiv" style="border: 1px outset red;color: blue;display: block;float:left">
+		<img src="https://picsum.photos/id/1016/3844/2563" width="200" height="200" border="0" alt="">
+	</div>
+
+    <div id="2" class="innerDiv" style="border: 1px outset blue;color: red;display: none;float:right">
+		<img src="https://picsum.photos/id/1043/5184/3456" width="200" height="200" border="0" alt="">
+	</div>
+ </div>
+
+
+  <input type="button" value="clickme" onclick="toggleBlock();">
+
+ </body>
+</html>
